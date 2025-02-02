@@ -47,10 +47,10 @@ function authenticate($myusername, $mypassword)
                 exit();
             }
         } elseif ($_SESSION['role'] == "admin") {
-            header("Location: admins.php");
+            header("Location: admin.php");
             exit();
         } elseif ($_SESSION['role'] == "facility manager") {
-            header("Location: facility_managersi.php");
+            header("Location: facility_manager.php");
             exit();
         } else {
             echo "Invalid user or wrong password";
